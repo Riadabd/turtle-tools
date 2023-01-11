@@ -31,3 +31,19 @@ services:
       - database:database
     volumes:
       - ./config/resources:/config
+  validator:
+    image: semtech/mu-javascript-template
+    ports:
+      - 9229:9229
+    environment:
+      NODE_ENV: "development"
+    links:
+      - database:database
+    volumes:
+      - /home/r2d2/Code/rpio/semtech/app-turtle-validator:/app/
+  visualiser:
+    build: /home/r2d2/Code/rpio/semtech/app-turtle-visualiser/
+    environment:
+      MODE: "development"
+    volumes:
+      - /home/r2d2/Code/rpio/semtech/app-turtle-visualiser:/app/
