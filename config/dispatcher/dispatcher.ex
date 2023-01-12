@@ -3,7 +3,7 @@ defmodule Dispatcher do
   define_accept_types [
     html: [ "text/html", "application/xhtml+html" ],
     json: [ "application/json", "application/vnd.api+json" ],
-    image: [ "image/png" ]
+    image: [ "image/svg" ]
   ]
 
   @any %{}
