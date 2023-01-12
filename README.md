@@ -1,6 +1,6 @@
-# mu-project
+# Turtle-Tools
 
-Bootstrap a mu.semte.ch microservices environment in three easy steps.
+Bootstraps mu.semte.ch microservices ([app-turtle-visualiser](https://github.com/Riadabd/app-turtle-visualiser) and [app-turtle-validator](https://github.com/Riadabd/app-turtle-validator)) to be run in tandem with [frontend-turtle-tools](https://github.com/Riadabd/frontend-turtle-tools).
 
 ## How to
 
