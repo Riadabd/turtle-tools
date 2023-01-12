@@ -9,7 +9,7 @@ defmodule Dispatcher do
   @any %{}
   @json %{ accept: %{ json: true } }
   @html %{ accept: %{ html: true } }
-  @image %{ accept: ${ image: true } }
+  @image %{ accept: %{ image: true } }
 
   match "/validate/*path", @json do
     Proxy.forward conn, path, "http://validator/validate"
